@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class StudentViewModel {
     private final List<Student> students = new ArrayList<>();
 
@@ -7,9 +10,5 @@ public class StudentViewModel {
 
     public List<Student> getStudents() {
         return new ArrayList<>(students);
-    }
-
-    public void updateStudent(int index, String course) {
-        students.get(index).setCourse(course);
     }
 }
